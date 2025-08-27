@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from base_interfase/srv/AddInts.srv
+// generated code does not contain a copyright notice
+
+
+module base_interfase {
+  module srv {
+    struct AddInts_Request {
+      int32 num1;
+
+      int32 num2;
+    };
+    struct AddInts_Response {
+      int32 num;
+    };
+  };
+};

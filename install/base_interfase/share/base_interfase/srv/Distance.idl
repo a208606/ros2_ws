@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from base_interfase/srv/Distance.srv
+// generated code does not contain a copyright notice
+
+
+module base_interfase {
+  module srv {
+    struct Distance_Request {
+      float x;
+
+      float y;
+
+      float theta;
+    };
+    struct Distance_Response {
+      float distance;
+    };
+  };
+};

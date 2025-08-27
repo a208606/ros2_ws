@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from base_interfase/action/Progrees.action
+// generated code does not contain a copyright notice
+
+
+module base_interfase {
+  module action {
+    struct Progrees_Goal {
+      int32 req;
+    };
+    struct Progrees_Result {
+      int32 resp;
+    };
+    struct Progrees_Feedback {
+      double progrees;
+    };
+  };
+};

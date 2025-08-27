@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/install/base_interfase/lib/python3.12/site-packages",
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/install/base_interfase/lib/python3.12/site-packages",
+    ],
+    "cmake.sourceDirectory": "/home/robot/ros2_ws/cpp03_action",
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "functional": "cpp"
+    }
+}
