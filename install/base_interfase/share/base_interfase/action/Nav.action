@@ -1,0 +1,9 @@
+float64 x_goal
+float64 y_goal
+float64 theta_goal
+---
+float64 x_turtle
+float64 y_turtle
+float64 theta_turtle
+---
+float64 distance

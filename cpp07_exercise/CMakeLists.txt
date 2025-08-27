@@ -16,6 +16,8 @@ find_package(rclcpp_action REQUIRED)
 add_executable(exer01_pub_sub src/exer01_pub_sub.cpp)
 add_executable(exer02_server src/exer02_server.cpp)
 add_executable(exer03_client src/exer03_client.cpp)
+add_executable(exer04_action_server src/exer04_action_server.cpp)
+add_executable(exer04_action_client src/exer04_action_client.cpp)
 
 target_include_directories(exer01_pub_sub PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -49,11 +51,34 @@ target_link_libraries(
   ${rclcpp_action_TARGETS}
 )
 
+target_link_libraries(
+  exer04_action_server
+  ${rclcpp_TARGETS}
+  ${base_interfase_TARGETS}
+  ${turtlesim_msgs_TARGETS}
+  ${geometry_msgs_TARGETS}
+  ${rclcpp_action_TARGETS}
+)
+
+
+target_link_libraries(
+  exer04_action_client
+  ${rclcpp_TARGETS}
+  ${base_interfase_TARGETS}
+  ${turtlesim_msgs_TARGETS}
+  ${geometry_msgs_TARGETS}
+  ${rclcpp_action_TARGETS}
+)
+
+
 
 install(TARGETS
   exer01_pub_sub
   exer03_client
   exer02_server
+  exer04_action_server
+  exer04_action_client
+
   DESTINATION lib/${PROJECT_NAME})
 
 install(

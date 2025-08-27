@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from base_interfase/action/Nav.action
+// generated code does not contain a copyright notice
+
+
+module base_interfase {
+  module action {
+    struct Nav_Goal {
+      double x_goal;
+
+      double y_goal;
+
+      double theta_goal;
+    };
+    struct Nav_Result {
+      double x_turtle;
+
+      double y_turtle;
+
+      double theta_turtle;
+    };
+    struct Nav_Feedback {
+      double distance;
+    };
+  };
+};

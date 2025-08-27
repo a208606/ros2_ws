@@ -20,6 +20,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/AddInts.srv"
   "action/Progrees.action"
   "srv/Distance.srv"
+  "action/Nav.action"
 )
 
 
